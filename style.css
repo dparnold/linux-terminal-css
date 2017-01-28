@@ -11,7 +11,6 @@ html,body {
   border-color: #FFFFFF;
   border-style: solid;
   border-radius: 6px;
-
   background-color: #454545;
   color: #FFFFFF;
   margin-bottom: 10px;
@@ -21,7 +20,7 @@ html,body {
 }
 /* The terminal window where you put the content */
 .terminal .terminal-window {
-  padding: 20px;
+  padding: 14px;
   font-size: 14px;
   font-weight: normal;
   font-family: "Courier New", Monaco, monospace;
@@ -71,24 +70,31 @@ html,body {
  closing, maximizing, minimizing */
 .terminal .header {
   position: relative;
+  height:24px;
   background-image: linear-gradient(to top, #d6d6d6 0%, #e5e5e5 100%);
   text-align: center;
   padding: 2px;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
 }
+
 /* The buttons in the top right corner...*/
-.terminal .header ul.top-buttons {
-  position: absolute;
-  top: -40%;
-  right: 1%;
+.terminal .header .header-buttons {
+
+  float:right;
+  width:40%;
+}
+
+.terminal .header .header-buttons ul {
+  display: inline;
   list-style-type: none;
   color:#404040; 
 
+
 }
 /* ... are implemented as a list... */
-.terminal .header ul.top-buttons li {
-  display: inline-block;  
+.terminal .header .header-buttons ul li {
+  display: inline;
   float: right;
   font-size: 20px;
   border-radius: 6px;
@@ -97,12 +103,15 @@ html,body {
   cursor: pointer;
 }
 /* ... and just like in Mint there is a mouse-over effect  */
-.terminal .header ul.top-buttons li:hover {
+.terminal .header .header-buttons ul li:hover {
   font-weight:bold;
   color: #00000;
 }
 /* Change the properties of the window name */
-.terminal .header h4 {
+.terminal .header .header-name h4 {
+  float:left;
+  width:50%;
+  text-align:right;
   font-size: 14px;
   margin: 5px;
   letter-spacing: 1px;
