@@ -20,8 +20,8 @@ html,body {
 }
 /* The terminal window where you put the content */
 .terminal .terminal-window {
-  padding: 14px;
-  font-size: 14px;
+  padding: 15px;
+  font-size: medium;
   font-weight: normal;
   font-family: "Courier New", Monaco, monospace;
 }
@@ -70,9 +70,9 @@ html,body {
  closing, maximizing, minimizing */
 .terminal .header {
   position: relative;
-  height:24px;
+  overflow:hidden;  	/*This makes the heigth adjust to the content.
+  It is necessary because this div contains floating divs */
   background-image: linear-gradient(to top, #d6d6d6 0%, #e5e5e5 100%);
-  text-align: center;
   padding: 2px;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
@@ -94,9 +94,10 @@ html,body {
 }
 /* ... are implemented as a list... */
 .terminal .header .header-buttons ul li {
+  list-style-type: none;
   display: inline;
   float: right;
-  font-size: 20px;
+  font-size: x-large;
   border-radius: 6px;
   margin-right: 10px;
   font-weight:normal;
@@ -112,7 +113,7 @@ html,body {
   float:left;
   width:50%;
   text-align:right;
-  font-size: 14px;
+  font-size: large;
   margin: 5px;
   letter-spacing: 1px;
   color: #404040;
