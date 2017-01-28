@@ -8,7 +8,10 @@ html,body {
   width: 98%;
   min-height:10%;
   border-width: 1px;
-  border-color: #FFFFFF;
+  border-top-color: #FFFFFF;
+  border-bottom-color: #AAAAAA;
+  border-right-color: #AAAAAA;
+  border-left-color: #FFFFFF;
   border-style: solid;
   border-radius: 6px;
   background-color: #454545;
