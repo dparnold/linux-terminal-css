@@ -1,0 +1,114 @@
+html,body {
+    background-color: #FFFFFF;
+	height: 97%;
+}
+
+/* Create the whole terminal which cosists of a window and a header */
+.terminal {
+  width: 98%;
+  min-height:10%;
+  border-width: 1px;
+  border-color: #FFFFFF;
+  border-style: solid;
+  border-radius: 6px;
+
+  background-color: #454545;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+  -webkit-box-shadow: 5px 4px 20px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 5px 4px 20px 1px rgba(0,0,0,0.75);
+  box-shadow: 5px 4px 20px 1px rgba(0,0,0,0.75);
+}
+/* The terminal window where you put the content */
+.terminal .terminal-window {
+  padding: 20px;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Courier New", Monaco, monospace;
+}
+
+/* Sets the color for a path such as ~/page/menu $ */
+.terminal .terminal-window .path {
+  margin-right: 10px;
+  color:#729fcf;
+}
+/* Sets the color and font type for a user such as user@server */
+.terminal .terminal-window .user {
+  color:#6fc736;
+  font-weight: bold;
+}
+/* Decide how links within a menu class in the window should look like */
+.terminal .terminal-window .menu a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: normal;
+}
+/* Create mouse over effect */
+.terminal .terminal-window .menu a:hover {
+  font-weight: bold;
+}
+/* Create the blinkin cursor*/
+.terminal .terminal-window .cursor {
+  background-color: #FFFFFF;
+  animation: blink 1s steps(5, start) infinite;
+  -webkit-animation: blink 1s steps(5, start) infinite;
+}
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+
+
+
+/* The header contains the name of the terminal and the buttons for 
+ closing, maximizing, minimizing */
+.terminal .header {
+  position: relative;
+  background-image: linear-gradient(to top, #d6d6d6 0%, #e5e5e5 100%);
+  text-align: center;
+  padding: 2px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+/* The buttons in the top right corner...*/
+.terminal .header ul.top-buttons {
+  position: absolute;
+  top: -40%;
+  right: 1%;
+  list-style-type: none;
+  color:#404040; 
+
+}
+/* ... are implemented as a list... */
+.terminal .header ul.top-buttons li {
+  display: inline-block;  
+  float: right;
+  font-size: 20px;
+  border-radius: 6px;
+  margin-right: 10px;
+  font-weight:normal;
+  cursor: pointer;
+}
+/* ... and just like in Mint there is a mouse-over effect  */
+.terminal .header ul.top-buttons li:hover {
+  font-weight:bold;
+  color: #00000;
+}
+/* Change the properties of the window name */
+.terminal .header h4 {
+  font-size: 14px;
+  margin: 5px;
+  letter-spacing: 1px;
+  color: #404040;
+}
+
+
+
+
